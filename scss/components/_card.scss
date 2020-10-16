@@ -1,0 +1,36 @@
+.card {
+  width: 100%;
+  max-width: 50rem;
+  height: 24rem;
+  text-align: left;
+  background-color: $white;
+  padding: 3rem;
+  margin: 2rem 0;
+  position: relative;
+  border-radius: 0.5rem;
+  border-top: 0.5rem solid red;
+  box-shadow: 0px 10px 20px rgba($clr-grayish-blue, 0.4);
+  &__title {
+    color: $clr-dark-blue;
+    margin-bottom: 0.5rem;
+  }
+  &__description {
+    color: $clr-grayish-blue;
+    line-height: 1.6;
+    font-size: 1.3rem;
+  }
+  &__image {
+    width: 6rem;
+    position: absolute;
+    bottom: 3rem;
+    right: 3rem;
+  }
+}
+
+@media screen and (min-width: $break-desktop) {
+  .card {
+    width: 25%;
+    display: inline-block;
+    margin: 2rem 2rem;
+  }
+}
